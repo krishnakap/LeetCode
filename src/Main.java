@@ -1,3 +1,7 @@
+import java.sql.SQLOutput;
+import java.util.Arrays;
+import java.util.List;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -20,6 +24,21 @@ The result of the merge is [1,2,2,3,5,6] with the underlined elements coming fro
         int[] arr2 = {3,5,6,8,9};
 
         sol.merge1(arr1,3,arr2,3);
+
+        MergeTwoSorterLists mer = new MergeTwoSorterLists();
+
+        int[] arr11 = {1,2,3};
+        int[] arr22 = {3,5,6};
+
+        Integer[] listInt1 = Arrays.stream(arr11).boxed().toArray(Integer[]::new);
+        Integer[] listInt2 = Arrays.stream(arr22).boxed().toArray(Integer[]::new);
+
+        List<Integer> list1 = Arrays.asList(listInt1);
+        List<Integer> list2 = Arrays.asList(listInt2);
+
+        List<Integer> retList = mer.mergeTwoLists(list1,list2);
+
+        System.out.println(retList);
 
     }
 }

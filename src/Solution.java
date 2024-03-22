@@ -22,6 +22,8 @@ public class Solution {
             nums1[i] = list1.get(i);
         }
 
+        Collections.sort(list1);
+
         System.out.println(Arrays.toString(nums1));
 
     }
