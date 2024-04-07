@@ -1,5 +1,8 @@
+import com.leetcode.MergeStringAlternatively.MergeStrAlt;
+import com.leetcode.MergeStringAlternatively.MergeStringAlternatively;
 import com.leetcode.mergearray.MergeTwoSortedArrays;
 import com.leetcode.mergearray.NewMergeSortedArray;
+import com.leetcode.stackprg.StackSolution;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -25,5 +28,19 @@ public class Main {
         NewMergeSortedArray mer2 = new NewMergeSortedArray();
         mer2.merge1(num1,m,num2,n);
 
+        StackSolution sts = new StackSolution();
+
+        sts.checkValidString("()");
+
+        MergeStringAlternatively merstr = new MergeStringAlternatively();
+        String retStr  = merstr.MergeAlternate("abcd","qwer");
+        System.out.println(retStr);
+
+        MergeStrAlt merstr1 = new MergeStrAlt();
+        String newString = merstr1.merStrAltr("qwerty","asdf");
+        System.out.println(newString);
+
+
+ 
     }
 }
