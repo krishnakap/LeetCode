@@ -2,6 +2,7 @@ import com.leetcode.MergeStringAlternatively.MergeStrAlt;
 import com.leetcode.MergeStringAlternatively.MergeStringAlternatively;
 import com.leetcode.mergearray.MergeTwoSortedArrays;
 import com.leetcode.mergearray.NewMergeSortedArray;
+import com.leetcode.reverse.StrReverse;
 import com.leetcode.stackprg.StackSolution;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -40,7 +41,9 @@ public class Main {
         String newString = merstr1.merStrAltr("qwerty","asdf");
         System.out.println(newString);
 
+        StrReverse strrev = new StrReverse();
+        String revstr = strrev.reverseWords(" The great  wall of China ");
+        System.out.println(revstr);
 
- 
     }
 }
