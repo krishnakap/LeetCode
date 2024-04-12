@@ -2,8 +2,11 @@ import com.leetcode.MergeStringAlternatively.MergeStrAlt;
 import com.leetcode.MergeStringAlternatively.MergeStringAlternatively;
 import com.leetcode.mergearray.MergeTwoSortedArrays;
 import com.leetcode.mergearray.NewMergeSortedArray;
+import com.leetcode.palindrome.ValidPalindrome;
 import com.leetcode.reverse.StrReverse;
+import com.leetcode.reversevowels.ReverseVowels;
 import com.leetcode.stackprg.StackSolution;
+import com.leetcode.string_gcd.StringGCD;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -44,6 +47,22 @@ public class Main {
         StrReverse strrev = new StrReverse();
         String revstr = strrev.reverseWords(" The great  wall of China ");
         System.out.println(revstr);
+
+        StringGCD gcd = new StringGCD();
+        String retdiff = gcd.gcdOfStrings("ACBCDE","ACB");
+        System.out.println(retdiff);
+
+        ValidPalindrome palin = new ValidPalindrome();
+        boolean flag = palin.isPalindrome("A man, a plan, a canal: Panama");
+
+        if(flag){
+            System.out.println("Valid Palindrome");
+        } else {
+            System.out.println("Not Valid Palindrome");
+        }
+
+        ReverseVowels revv = new ReverseVowels();
+        revv.reverseVowels("Hello");
 
     }
 }
